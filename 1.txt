@@ -1,0 +1,43 @@
+1. some tools to use
+	package management
+		Linux or BSD come with it, yum or apt-get
+		Mac OS X, MacPorts and Homebrew (Homebrew is simpler)
+		Windows, Chocolatey or Cygwin in tandem with the apt-cyg package manager (similar to Debian’s apt-get package manager)
+			Chocolatey
+				a command line application installer for Windows based on a developer-centric package manager called NuGet
+				adds, updates, and uninstalls programs in the background requiring very little user interaction
+				http://www.pcworld.com/article/2459950/how-to-use-chocolatey-a-delicious-windows-package-manager.html
+			Cygwin
+				a large collection of GNU and Open Source tools which provide functionality similar to a Linux distribution on Windows.
+				a DLL (cygwin1.dll) which provides substantial POSIX API functionality.
+				so with Cygwin, the apt-cyg package manager can be used
+			Win 10 also ships with the PackageManagement tool
+	version control
+		git
+	package manager for Python
+		Pip (Pip Install Python)
+		
+2. Chocolatey
+	choco install [program name]		install
+	choco search [keyword]			search for program name
+	choco install [program1] [program2]	install multiple programs
+		for much larger batches of programs, you can create a XML file with a .config extension
+			<?xml version="1.0" encoding="utf-8"?>
+				<packages>
+				    <package id="UTorrent" />
+				    <package id="notepadplusplus" />
+				    <package id="IrfanView" />
+				</packages>
+	choco update [program name]		update
+	choco update all			update all programs
+	choco update [package name] -source [source URL]	using a alternative source other than the main Chocolatey package feed
+	choco unistall [program name]		uninstall
+
+
+
+
+
+
+
+
+
